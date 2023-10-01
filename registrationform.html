@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration Form</title>
+    <style>
+        .main{
+                background-color: black;
+                height: 100vh;
+               
+                justify-content: center;
+                color: rgb(236,237,237);
+                display: flex;
+                
+
+            }
+           .ipbox{
+              padding: 10px;
+              width: 180px;
+             
+              border-radius: 5px;
+              border-style: none;
+              background-color:rgb(48,50,69) ;
+              float: right;
+            }
+            #workshop{
+                padding: 10px;
+              width: 180px;
+             
+              border-radius: 5px;
+              border-style: none;
+              background-color:rgb(48,50,69) ;
+            }
+            #btn{
+                padding: 10px;
+                width: 100px;
+                border-radius: 5px;
+                border-style: none;
+                background-color: rgb(0, 0, 255);
+            }
+            .form{
+                
+               
+                background-color:rgb(21,23,43) ;
+                padding: 60px;
+             
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <h1>Conference Registration</h1>
+    <form action="#" method="post"> 
+        <label for="name">Name:</label>
+        <input type="text" class="ipbox" id="name" name="name" required><br><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" class="ipbox" id="email" name="email" required><br><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" class="ipbox" id="phone" name="phone" required><br><br><br>
+
+        <label for="affiliation">Affiliation:</label>
+        <input type="text"  class="ipbox" id="affiliation" name="affiliation" required><br><br><br>
+
+        <label>Dietary Preferences:</label><br>
+        <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" id="vegan" name="diet" value="vegan">
+        <label for="vegan">Vegan</label><br>
+        <input type="checkbox" id="gluten-free" name="diet" value="gluten-free">
+        <label for="gluten-free">Gluten-free</label><br><br>
+
+        <label for="workshop">Preferred Workshop:</label>
+        <select id="workshop" name="workshop">
+            <option value="workshop1">Workshop 1</option>
+            <option value="workshop2">Workshop 2</option>
+            <option value="workshop3">Workshop 3</option>
+        </select><br><br>
+
+        <label>Registration Type:</label><br>
+        <input type="radio" id="general" name="registration" value="General Attendee">
+        <label for="general">General Attendee</label><br>
+        <input type="radio" id="student" name="registration" value="Student">
+        <label for="student">Student</label><br>
+        <input type="radio" id="vip" name="registration" value="VIP">
+        <label for="vip">VIP</label><br><br>
+
+        <input id="btn" type="submit" value="Submit">
+    </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
